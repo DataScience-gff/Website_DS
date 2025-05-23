@@ -1,0 +1,82 @@
+website:
+ # cookie-consent:
+ #   type: express
+ #   style: interstitial
+ #   palette: dark
+ #   policy-url: www.hertiecodingclub.com
+ #   prefs-text: "text"
+  google-analytics: "G-HJEMN0LJY7"
+  title: ""
+  site-url: https://www.hertiecodingclub.com/
+  favicon: images/logo ficohsa.jpg
+  page-footer:
+    left: 
+      - text: "{{< fa regular copyright >}} {{< fa solid circle-user >}} 2025 GFF | Ciencia Datos"
+        href: https://www.ficohsa.com/
+    center: 
+      - text:  · [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/)  engine ·
+        href: https://quarto.org 
+    right:
+      - text: "{{< fa solid square-envelope size=lg >}}"
+        href: mailto:hertiecodingclub@gmail.com
+      - text: "{{< fa brands twitter size=lg >}}"
+        href: https://x.com/GrupoFicohsa
+      - text: "{{< fa brands instagram size=lg >}}"
+        href: https://www.instagram.com/grupoficohsa/
+      - text: "{{< fa brands youtube size=lg >}}"
+        href: https://www.youtube.com/@GrupoFicohsa
+  navbar:
+    logo: images/logo.png
+    href: https://www.hertiecodingclub.com/
+    collapse-below: lg
+    pinned: true
+    right:
+      - id: howto
+        icon: house-fill
+        href: index.qmd
+        text: "Home"
+      - text: "{{< fa solid people-group >}} Miembros"
+        menu:
+          - text: "{{< fa solid person-chalkboard >}} Team"
+            href: members/team/team.qmd
+          - text: "{{< fa solid scale-balanced >}} Club Statutes"
+            href: members/statute/statute.qmd
+      - icon: mortarboard-fill  
+        text: "Learn"
+        menu:
+          - text: "{{< fa brands r-project >}} R"
+            href: learn/rstudio.qmd
+          - text: "{{< fa brands python >}} Python"
+            href: learn/python.qmd
+          - text: "{{< fa solid screwdriver-wrench >}} I2DS Tools"
+            href: learn/i2ds.qmd
+      - text: "{{< fa solid meteor >}} Material"
+        href: material/index.qmd
+      - icon: bi-calendar3  
+        href: events/index.qmd
+        text: "Events"
+      #- icon: fingerprint  
+      #  href: register/register.qmd
+      #  text: "Register"
+      - text: "{{< fa regular newspaper >}} News"
+        href: news/index.qmd
+      - text: "{{< fa solid laptop-code >}} About us"
+        menu:
+          - text: "{{< fa solid school-flag >}} Who are we"
+            href: about_us/index.qmd
+          - text: "{{< fa solid circle-nodes >}} Hertie Clubs"
+            href: about_us/hertieclubs.qmd
+          - text: "{{< fa solid shield-alt >}} Privacy Policy"
+            href: about_us/privacy.qmd
+          - text: "{{< fa solid file-alt >}} Impressum"
+            href: about_us/impressum.qmd
+            
+       
+     
+comments:
+  giscus:
+    repo: jurjoroa/hcc-website
+    
+
+
+
